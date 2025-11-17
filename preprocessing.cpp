@@ -6,7 +6,10 @@ using std::endl;
 #define MODE 1
 
 #if MODE == 1
-    void add(double a, double b);
+   void add(double a, double b)
+    {
+        cout << "Результат сложения: " << (a + b) << endl;
+    }
 #endif
 
 int main()
@@ -30,9 +33,4 @@ int main()
 #endif
 
     return EXIT_SUCCESS;
-}
-
-void add(double a, double b)
-{
-    cout << "Результат сложения: " << (a + b) << endl;
 }
